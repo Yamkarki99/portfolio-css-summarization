@@ -1,0 +1,162 @@
+/* Default styles */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* <!-- checkbox section  --> */
+:root {
+  --color-orange: #ff5c00;
+  --color-dark: #2a2a2a;
+
+  --body-bg: #fff;
+  --text-color: var(--color-dark);
+  --border-color: var(var(--color-dark));
+
+  /* for dark mode */
+  --dark-bg: var(--color-dark);
+  --dark-text-color: #fff;
+  --dark-border-color: #fff;
+}
+
+.wrapper {
+  background: var(--body-bg);
+  min-height: 100vh;
+  color: var(--text-color);
+}
+
+#darkMode {
+  position: fixed;
+  top: 10rem;
+  left: 2rem;
+  display: none;
+}
+.dark-mode-toggle {
+  position: fixed;
+  top: 10rem;
+  left: 3rem;
+}
+.dark-mode-toggle:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+/* dark more activation */
+#darkMode:checked + .wrapper {
+  background: var(--dark-bg);
+  min-height: 100vh;
+  color: var(--dark-text-color);
+}
+
+/* <!-- Header section  --> */
+header {
+  box-shadow: 0 0 10px 5px grey;
+  position: sticky;
+  top: 0;
+}
+.header {
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  position: relative;
+}
+.logo > div:nth-child(1) h1 {
+  font-size: 1.8rem;
+}
+.line {
+  font-size: 1rem;
+}
+.line::before {
+  content: "";
+  width: 4px;
+  height: 60%;
+  left: 40%;
+  background: var(--color-orange);
+  position: absolute;
+}
+
+#check,
+.menu-icon {
+  display: none;
+}
+
+.navigation {
+  list-style: none;
+}
+.navigation li a:hover {
+  color: var(--color-orange);
+  transition: all 0.5s;
+  text-decoration: underline;
+}
+
+/* <!-- hero section  --> */
+.home {
+  margin: 30vh;
+  padding: 10px;
+  background-color: rgba(239, 207, 223, 0.5);
+  width: 90%;
+  height: 60vh;
+  border-radius: 30px;
+}
+.message {
+  text-shadow: #2a2a2a;
+  font-size: 15px;
+  float: left;
+}
+.message:: {
+  gap: 20%;
+}
+
+.download {
+  padding: 20px;
+  background-color: black;
+  border-radius: 20px;
+  border: solid red 3px;
+  color: white;
+  align-items: center;
+}
+
+/* <!-- Bannder section  --> */
+
+/* <!-- Skills section  --> */
+
+/* <!-- Projects section  --> */
+
+/* <!-- About me section  --> */
+
+/* <!-- Contact me section  --> */
+
+/* <!-- footer section --> */
+footer {
+  padding: 10px;
+  top-left: 40%;
+  height: 30vh;
+  width: auto;
+  color: white;
+  background: #000;
+  align-items: center;
+  text-align: center;
+}
